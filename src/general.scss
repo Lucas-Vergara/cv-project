@@ -1,0 +1,78 @@
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+#mainBody {
+    grid-column: col-start / span 10;
+}
+
+#secondBody {
+    grid-column: span 2;
+}
+
+#header {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#header span {
+    margin: 10px;
+}
+
+#header span *{
+    color: lightgreen;
+}
+
+#body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.module {
+    padding: 10px 0px;
+    border: 1px groove transparent;
+    position: relative;
+}
+
+.module:hover {
+    border: 1px groove lightblue;
+}
+
+.module:hover  .edit {
+    visibility: visible;
+    color: lightgreen;
+}
+
+// #work:hover .edit {
+
+// }
+
+
+.edit {
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+}
+
+.subtitle {
+    font-size: large;
+    color: blue;
+}
+
+.highlight1 {
+    font-weight: bold;
+}
+
+.highlight2 {
+    color: blue;
+}
+
+.highlight3 {
+    font-style: italic;
+}
+
+.form *{
+    display: block;
+}
